@@ -17,7 +17,7 @@ if st.button('Histograma de Año del Modelo'):
     else:
         fig_hist = px.histogram(
             car_data, x=car_data.columns[0], title=f'Histograma de {car_data.columns[0]}')
-    fig_hist.show()
+    st.plotly_chart(fig_hist, use_container_width=True)
 
 
 # Crear un botón para el gráfico de dispersión
@@ -26,7 +26,7 @@ if st.button('Gráfico de Dispersión "Año vs Odómetro"'):
     if 'odometer' in car_data.columns and 'model_year' in car_data.columns:
         fig_scatter = px.scatter(car_data, x='model_year',
                                  y='odometer', title='Año vs Odómetro')
-        fig_scatter.show()
+        st.plotly_chart(fig_scatter, use_container_width=True)
     else:
         st.write(
             "No se encontraron las columnas 'odometer' y 'price' para crear el scatter plot.")
