@@ -7,3 +7,6 @@ Este proyecto tiene como objetivo poner en práctica tareas habituales de ingeni
 - Encabezado con descripción del proyecto.
 - Botón para generar un histograma del año del modelo de los vehículos
 - Botón para generar un gráfico de dispersión relacionando el precio con el kilometraje.
+
+### enlace a la página de render que contiene el resultado del proyecto
+https://sprint7project-q369.onrender.com
